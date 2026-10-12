@@ -1,8 +1,8 @@
 <h1 align="left">Hi, I'm Aby (Abhishek Chopda) 👋</h1>
 
 <p align="left">
-<b>AI Engineer / Data Scientist</b> · I build LLM, RAG and ML systems that hold up in production.<br/>
-Master of Data Science & Innovation @ UTS (2026) · ex-ML/AI Software Engineer @ Persistent Systems · Sydney, Australia
+<b>AI Engineer · LLM, RAG & Agentic Systems</b><br/>
+2+ years shipping production LLM solutions for enterprise clients · Master of Data Science & Innovation @ UTS (2026) · Sydney, Australia
 </p>
 
 <p align="left">
@@ -12,31 +12,38 @@ Master of Data Science & Innovation @ UTS (2026) · ex-ML/AI Software Engineer @
 <img src="https://img.shields.io/badge/Open%20to%20work-Dec%202026%2C%20full%20time-2ea44f" />
 </p>
 
+I start from the business problem, build the AI system that solves it, and test it properly before it reaches users.
+
 ---
 
-### 🧭 What I do
+### 💼 Experience highlights
 
-- **Production GenAI** — 2 years in Persistent Systems' GenAI Centre of Excellence shipping LLM, NLP and RAG systems on Azure OpenAI, Azure AI Search, Cosmos DB and Blob Storage.
-- **Retrieval that works** — document parsing, chunking, hybrid search and evaluation for RAG over messy real-world data.
-- **End-to-end ML** — from experiments to a tested Python package to a deployed API, with honest evaluation against baselines.
-- **Now** — Data Science Intern at SenateSHJ, Sydney, building a crisis-intelligence platform.
+**Data Science Intern · SenateSHJ, Sydney** <sub>(Aug 2026 – present)</sub>
+- Own delivery of the firm's crisis-intelligence platform — scaled the research dataset from **300 to 1,000+ companies** with an AI-powered enrichment and validation workflow.
+- Built a natural-language analytics interface on **Databricks Genie** so researchers can query the data without writing SQL.
+
+**Software Engineer – AI/ML · Persistent Systems, CTO Business Unit** <sub>(2022 – 2024)</sub>
+- Shipped a production **LLM-powered HR chatbot** over 100+ policy documents, serving **20,000+ employees**.
+- Delivered a **"Talk to Your Data"** NLP solution giving healthcare stakeholders plain-language access to their databases.
+- Designed a **multi-model cost-estimation tool** (OpenAI, Claude, AWS Bedrock) used for scoping on 5+ client projects.
+- Ran prompt-engineering and LLM workshops for **100+ engineers**.
 
 ### 🚀 Featured projects
 
 | Project | What it is | Stack |
 |---|---|---|
-| **Sydney Weather Intelligence** <br/> [experiments](https://github.com/abychopda/sydney-weather-intelligence) · [API](https://github.com/abychopda/weather-intelligence-api) · [package](https://github.com/abychopda/mlkit-aby) · [live docs](https://weather-intelligence-api-s6rd.onrender.com/docs) | End-to-end ML product: forecasts a 3-day Climate Comfort Index and a 7-day Weather Hazard Category for Sydney. Ridge model beats persistence and seasonal baselines (MAE 6.49 vs 7.56 at +1 day); served by a Dockerised FastAPI service on Render, with a reusable toolkit published to TestPyPI. | Python · scikit-learn · FastAPI · Docker · uv · pytest |
-| **[FinSightAI](https://github.com/abychopda/FinSightAI)** | Full-stack financial-insights agent (team project): React chat UI, FastAPI + LangChain ReAct agent, MCP tool server. I built the RAG pipeline over SEC 10-K filings — section-aware parsing, chunking, embeddings, retrieval and QA on ChromaDB Cloud. | Python · LangChain · ChromaDB · FastAPI · MCP · Docker |
-| **[NBA Career Longevity Prediction](https://github.com/abychopda/nba-career-longevity-prediction)** | Kaggle competition: predict which college players will last 3+ NBA seasons (3.4% positive class). Compared Logistic Regression, LightGBM and feature selection on AUPRC; a regularised 39-feature model scored best (Kaggle AUPRC 0.604). | Python · scikit-learn · LightGBM |
-| **[US Housing Affordability Dashboard](https://github.com/abychopda/data-narratives-design-and-storytelling)** | Interactive Tableau dashboard across all 51 states (2024–26), combining prices, mortgage rates, income and unemployment into an affordability-stress view. | Tableau · Python · pandas |
+| **[FinSightAI](https://github.com/abychopda/FinSightAI)** | Agentic financial-insights system (team project): LangChain ReAct agent with MCP tools over SEC 10-K filings, news sentiment (FinBERT) and live market data. I built the 10-K RAG pipeline. Evaluated on a 52-question benchmark with RAGAS — **90–100% retrieval hit rate, 95% tool-call accuracy**. | LangChain · ChromaDB · FastAPI · MCP · React · Docker |
+| **Sydney Weather Intelligence** <br/> [experiments](https://github.com/abychopda/sydney-weather-intelligence) · [API](https://github.com/abychopda/weather-intelligence-api) · [package](https://github.com/abychopda/mlkit-aby) · [live docs](https://weather-intelligence-api-s6rd.onrender.com/docs) | End-to-end ML product: forecasts a 3-day Climate Comfort Index and a 7-day Weather Hazard Category for Sydney. Beats persistence and seasonal baselines (MAE 6.49 vs 7.56 at +1 day); served by a Dockerised FastAPI service on Render, with a reusable toolkit on TestPyPI. | scikit-learn · FastAPI · Docker · uv · pytest |
+| **[NBA Career Longevity Prediction](https://github.com/abychopda/nba-career-longevity-prediction)** | Kaggle competition on a 3.4%-positive target. Compared Logistic Regression, LightGBM and feature selection on AUPRC; a regularised 39-feature model scored best (Kaggle AUPRC 0.604). | scikit-learn · LightGBM |
+| **[US Housing Affordability Dashboard](https://github.com/abychopda/data-narratives-design-and-storytelling)** | Interactive Tableau dashboard across all 51 states (2024–26), combining prices, mortgage rates, income and unemployment into an affordability-stress view. | Tableau · pandas |
+| **Surveillance Video Querying** <sub>(in progress, private)</sub> | Natural-language search over multi-camera CCTV (team of 6). I own the RAG retrieval layer: an LLM turns free-text questions into metadata filters + semantic search over Qdrant and PostgreSQL. | LLMs/VLMs · Qdrant · PostgreSQL · React |
 
 ### 🛠️ Toolbox
 
-**Languages:** Python · SQL<br/>
-**GenAI / NLP:** LLMs · RAG · LangChain · MCP · prompt engineering · LLM evaluation<br/>
-**ML / DL:** scikit-learn · LightGBM · PyTorch<br/>
-**Engineering:** FastAPI · Docker · uv · pytest · GitHub Actions<br/>
-**Data & Cloud:** Azure (OpenAI, AI Search, Cosmos DB, Blob, AD) · Databricks · Snowflake · PostgreSQL · ChromaDB
+**AI & LLM:** LLM agents · RAG · prompt & context engineering · LLM evaluation (RAGAS) · LangChain · MCP · Hugging Face<br/>
+**ML:** scikit-learn · LightGBM · PyTorch<br/>
+**Engineering:** Python · SQL · FastAPI · Docker · CI/CD · pytest · uv<br/>
+**Data & Cloud:** AWS Bedrock · Azure OpenAI · Databricks · PySpark · vector databases (ChromaDB, Qdrant) · PostgreSQL
 
 ### ✍️ Writing
 
